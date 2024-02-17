@@ -45,6 +45,32 @@ button ,a{
     word-spacing: .1rem;
 }
 /* navigation section */
+
+
+.navbar-toggler-icon{
+    background-color: white;
+    border-color: white;
+}
+
+/* Custom styles to change hamburger color */
+/* .navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;} */
+/* .container .navbar-toggler .navbar-toggler-icon {
+    background-image: var(--bs-main-color);
+} */
+/* Custom styles to change hamburger color */
+/* .custom-toggler-icon {
+    color: var(--bs-main-color) !important;
+} */
+
+
 .navbar-brand{
     font-weight: bold;
 }
