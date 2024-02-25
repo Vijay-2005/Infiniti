@@ -44,6 +44,15 @@ button ,a{
     letter-spacing: 0.03rem;
     word-spacing: .1rem;
 }
+.common-title {
+font-size: 2.8rem;
+font-weight: 500rem;
+letter-spacing: 0.01rem !important
+}
+.common-heading{
+    margin-bottom: 4.2rem;
+
+}
 /* navigation section */
 
 
@@ -52,23 +61,7 @@ button ,a{
     border-color: white;
 }
 
-/* Custom styles to change hamburger color */
-/* .navbar-toggler-icon {
-    display: inline-block;
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    background-image: var(--bs-navbar-toggler-icon-bg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 100%;} */
-/* .container .navbar-toggler .navbar-toggler-icon {
-    background-image: var(--bs-main-color);
-} */
-/* Custom styles to change hamburger color */
-/* .custom-toggler-icon {
-    color: var(--bs-main-color) !important;
-} */
+
 
 
 .navbar-brand{
@@ -107,7 +100,9 @@ color: var(--secondary-color);
 .bg-color {
     background-color: var(--bs-dark-primary);
 }
-.custom-shape-divider-bottom-1708162051 {
+/* hero section end  */
+/* shape divider start  */
+.custom-shape-divider-bottom-1708838998 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -117,13 +112,37 @@ color: var(--secondary-color);
     transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1708162051 svg {
+.custom-shape-divider-bottom-1708838998 svg {
     position: relative;
     display: block;
-    width: calc(101% + 1.3px);
-    height: 107px;
+    width: calc(100% + 1.3px);
+    height: 120px;
+    transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1708162051 .shape-fill {
+.custom-shape-divider-bottom-1708838998 .shape-fill {
     fill: #FFFFFF;
 }
+
+/* shape divider ends  */
+
+/* service section start */
+     .service-section{
+        padding: 6rem 0 3rem 0 !important;
+     }
+     .icon-span{
+        width: 2.5rem;
+        height: 2.5rem;
+        background-color: var(--secondary-color);
+        color: var(--bs-main-color);
+     }
+     .service-card:hover   {
+        box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+     }
+     /* .service-card {
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+     } */
+     
+/* service section end  */
+
