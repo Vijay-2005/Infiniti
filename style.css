@@ -57,11 +57,17 @@ letter-spacing: 0.01rem !important
     padding-bottom: 9rem;
 }
 /* navigation section */
+.navbar-toggler{
+    border-color: var(--bs-main-color);
+}
 
 
 .navbar-toggler-icon{
     background-color: white;
     border-color: white;
+}
+.container .navbar-brand{
+    margin-top: 2rem;
 }
 
 
@@ -245,5 +251,89 @@ color: var(--secondary-color);
 /* form section  */
 .container .form-section{
     width: 50%;
-    
+
 }
+/* footer  */
+.main-footer-section{
+    padding: 0 0 4rem 0;
+       background-color: #222;
+       color: var( --bs-main-color);
+   }
+   
+   .contact-div{
+       background-color:  var(--bs-dark-primary);
+   }
+   
+   .icon-div{
+       width: 5rem;
+       height: 5rem;
+       /*background: #1089ff;*/
+   }
+   
+   .icon-  {
+       width: 2.5rem;
+       height: 2.5rem;
+       background-color: #1089ff;
+       color: var( --bs-main-color);
+   }
+   
+   .icon-span .fa-brands, .fab{
+       color:white;
+   }
+   
+   .carousel-indicators{
+       bottom: -20%;
+   }
+   
+   .carousel-indicators [data-bs-target]{
+       margin-top: 2rem;
+       width: .7rem;
+       height: .7rem;
+       background-color: #1089ff;
+   }
+   /* media queries for reponsiveness */
+   @media screen and( max-width : 1200px){
+    .hero-video--section{
+        width: 20rem;
+        border-radius: 1rem;
+        -webkit-border-radius: 1rem;
+        -moz-border-radius: 1rem;
+        -ms-border-radius: 1rem;
+        -o-border-radius: 1rem;
+}
+    
+   }
+   @media screen and( max-width : 998px){
+    h1{
+        font-size: 2.4rem;
+
+    }
+    section .common-heading {
+        font-size: 2rem;
+
+    }
+    section .para-width{
+        width : auto ;
+
+    }
+    
+    .hero-section{
+        height: 100vh;
+    }
+    h2{
+        font-size: 1.8rem;
+        line-height: 2.4rem;
+
+
+    }
+    .more-info-section {
+        text-align: center;
+    }
+
+   
+    .carousel-indicators {
+        bottom: -6% !important;
+    }
+   }
+   /* note  */
+   /* we used order class in  our hero section to show hero section gif at top on mobile phone  */
