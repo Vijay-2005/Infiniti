@@ -18,6 +18,7 @@
     --bs-supporting-color: #C850C0;
 }
 
+
 h1, h2,h3,h4,h5{
     font-family: 'Lexend Deca', sans-serif;
     color: var( --bs-dark-color);
@@ -51,6 +52,7 @@ letter-spacing: 0.01rem !important
 }
 .common-heading{
     margin-bottom: 4.2rem;
+    text-transform: capitalize;
 
 }
 .common-section{
@@ -147,6 +149,8 @@ color: var(--secondary-color);
      }
      .service-card:hover   {
         box-shadow: rgba(149,157,165,0.2) 0px 8px 24px;
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
      }
      /* .service-card {
         margin-left: 0.1rem;
@@ -169,7 +173,10 @@ color: var(--secondary-color);
 
 .more-info-section .img-section{
     position: relative;
+
 }
+
+    
 .more-info-section .img-section img{ 
     
     width: 70%;
@@ -179,6 +186,12 @@ color: var(--secondary-color);
 .online-mode-section h2{
     margin-top: 5rem;
 }
+.online-mode-section      .image:hover {
+    /* Add your hover styles here */
+    transform: scale(1.2); /* Example: Scale the image by 20% on hover */
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+}
+
 
 /* carousel style  */
 .carousel .carousel-inner .card {
@@ -195,6 +208,7 @@ color: var(--secondary-color);
 .carousel-inner .card:hover {
     background-color: var(--bs-main-color);
     color: var(--bs-dark-color);
+    transform: scale(1.05);
     }
  .carousel-inner .card  :hover p{
         color: var(--bs-dark-color);
@@ -215,8 +229,21 @@ color: var(--secondary-color);
     background-color: #1089ff;
 }
 /* expert section */
-.card p{
+.card p{     
     font-size: 15px;
+}
+ .experts-section .container .align-item-center:hover{
+    transform: scale(1.1);
+    /*Example:;
+    Scaletheimageby20%onhover*/transition: transform 0.3s ease;
+    -webkit-transition: transform 0.3s ease;
+    -moz-transition: transform 0.3s ease;
+    -ms-transition: transform 0.3s ease;
+    -o-transition: transform 0.3s ease;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
 }
 .experts-section{
     padding-bottom: 3rem;
@@ -260,14 +287,14 @@ color: var(--secondary-color);
        color: var( --bs-main-color);
    }
    
-   .contact-div{
+.contact-div{
        background-color:  var(--bs-dark-primary);
    }
    
-   .icon-div{
+.icon-div{
        width: 5rem;
        height: 5rem;
-       /*background: #1089ff;*/
+       
    }
    
    .icon-  {
@@ -291,19 +318,31 @@ color: var(--secondary-color);
        height: .7rem;
        background-color: #1089ff;
    }
+   .card:hover{
+    
+   }
    /* media queries for reponsiveness */
-   @media screen and( max-width : 1200px){
+   
+@media screen and (max-width: 1400px) {
+
+    .hero-video--section{
+        width: 25rem;
+        border-radius: 1rem;
+    }
+}
+@media screen and (max-width: 1200px) {
+
+    .hero-section{
+        height: 80vh;
+    }
+
     .hero-video--section{
         width: 20rem;
         border-radius: 1rem;
-        -webkit-border-radius: 1rem;
-        -moz-border-radius: 1rem;
-        -ms-border-radius: 1rem;
-        -o-border-radius: 1rem;
+    }
 }
-    
-   }
-   @media screen and( max-width : 998px){
+
+    @media screen and ( max-width : 998px){
     h1{
         font-size: 2.4rem;
 
@@ -328,12 +367,32 @@ color: var(--secondary-color);
     }
     .more-info-section {
         text-align: center;
+        padding: 0rem;
+        height: 600px;
     }
+    .more-info-section .common-heading{
+        margin-bottom: 2px;
+    }
+    .more-info-section .common-heading p{
+        margin-top: 2px;
+    }
+    h4{
+        text-align: center;
+
+    }
+    .footer-links li{
+        text-align: center;
+    }
+    .input-group{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
 
    
     .carousel-indicators {
         bottom: -6% !important;
     }
-   }
+   } 
    /* note  */
    /* we used order class in  our hero section to show hero section gif at top on mobile phone  */
